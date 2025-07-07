@@ -23,4 +23,8 @@ void main() {
   test('handles newline as delimiter along with commas', () {
     expect(calculator.add("1\n2,3"), 6);
   });
+
+  test('supports custom delimiter using //;\\n format', () {
+    expect(calculator.add("//;\n1;2"), 3);
+  });
 }
