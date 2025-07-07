@@ -34,5 +34,19 @@ This project was developed using Test-Driven Development (TDD). The following te
    - **Input:** `"1,-2,-5,3"`  
    - **Output:** ❌ Throws `Exception: negative numbers not allowed -2,-5`
 
+---
+
+## How to Run
+
+Follow the steps below to set up and run the project:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Amer15/flutter_tdd_calculator.git
+   ```
+2. Open the project in the code editor
+3. Open the terminal and run this command ```flutter pub get```  to install dependencies.
+4. In the terminal run this command ```flutter test``` to run all test cases'  
+   
 
 
