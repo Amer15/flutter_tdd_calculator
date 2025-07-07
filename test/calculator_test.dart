@@ -35,4 +35,12 @@ void main() {
           (e) => e.toString().contains("negative numbers not allowed -2"))),
     );
   });
+
+  test('throw exception listing all negative numbers', () {
+    expect(
+      () => calculator.add("1,-2,-5,3"),
+      throwsA(predicate(
+          (e) => e.toString().contains("negative numbers not allowed -2,-5"))),
+    );
+  });
 }
