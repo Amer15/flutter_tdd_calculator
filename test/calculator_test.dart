@@ -15,4 +15,8 @@ void main() {
   test('returns sum of two comma-separated numbers', () {
     expect(calculator.add("1,2"), 3);
   });
+
+  test('returns sum of multiple comma-separated numbers', () {
+    expect(calculator.add("1,2,3,4,5"), 15);
+  });
 }
