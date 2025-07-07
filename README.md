@@ -1,16 +1,38 @@
-# tdd_calculator
+## ✅ Test Cases Covered
 
-A new Flutter project.
+This project was developed using Test-Driven Development (TDD). The following test cases were implemented to ensure correctness:
 
-## Getting Started
+1. **Returns 0 for an empty string**  
+   - **Input:** `""`  
+   - **Output:** `0`
 
-This project is a starting point for a Flutter application.
+2. **Returns the same number when a single number is provided**  
+   - **Input:** `"4"`  
+   - **Output:** `4`
 
-A few resources to get you started if this is your first Flutter project:
+3. **Returns the sum of two comma-separated numbers**  
+   - **Input:** `"1,2"`  
+   - **Output:** `3`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+4. **Returns the sum of multiple comma-separated numbers**  
+   - **Input:** `"1,2,3,4,5"`  
+   - **Output:** `15`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5. **Handles newline (`\n`) as a valid delimiter along with commas**  
+   - **Input:** `"1\n2,3"`  
+   - **Output:** `6`
+
+6. **Supports custom delimiters specified in the format `//<delimiter>\n`**  
+   - **Input:** `"//;\n1;2"`  
+   - **Output:** `3`
+
+7. **Throws an exception when a single negative number is included**  
+   - **Input:** `"1,-2"`  
+   - **Output:** ❌ Throws `Exception: negative numbers not allowed -2`
+
+8. **Throws an exception listing all negative numbers if multiple are present**  
+   - **Input:** `"1,-2,-5,3"`  
+   - **Output:** ❌ Throws `Exception: negative numbers not allowed -2,-5`
+
+
+
